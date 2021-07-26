@@ -144,7 +144,7 @@
 /* index */
 .home_img{
   display: grid;
-  grid-template-columns: 1fr 600px 1fr;
+  grid-template-columns: 1fr 400px 1fr;
   gap: 30px;
   margin: 0 auto;
   width: 100%;
@@ -227,6 +227,15 @@
 .music_btn{
   position: absolute;
   left: 40%;
+}
+
+/* index */
+.home_img{
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
+  gap: 30px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* profile */
