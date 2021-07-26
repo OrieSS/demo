@@ -8,7 +8,8 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="./style.css"> 
-    <script src="./demo.js" defer></script> 
+    <script src="./demo.js" defer></script>
+    <script src="./sound.js" defer></script>  
 </head>
 <body>
     <div class="h2">hello</div>
@@ -51,5 +52,64 @@
             <video id="moving" class="moving" src="HP spoud on off 映像.mp4" >
         </div>
         </div>
+
+
+        <main>
+
+            <div id="bt" class="openbtn1" style="display: none;"><span></span><span></span><span></span></div>
+            <nav id="g-nav">
+              <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                <a class="g-nav_text, home_btn" onclick="link_index()">HOME</a>
+              <ul> 
+              <li><a href="#"><img  style="width: 100px; height: 100px;" src="./img/q_profile.png"></a></li>
+              <li class="g-nav_text"><a  href="#" onclick="link_profile()">PROFILE</a></li>  
+              <li><a href="#"><img  style="width: 100px; height: 100px;" src="./img/q_lesson.png"></a></li>
+              <li class="g-nav_text"><a href="#" onclick="link_lesson()">LESSON</a></li>  
+              <li><a href="#"><img  style="width: 110px; height: 100px;" src="./img/q_work.png"></a></li>
+              <li class="g-nav_text"><a href="#" onclick="link_work()">WORK</a></li>
+              <li><a href="#"><img  style="width: 130px; height: 140px;" src="./img/q_brand.png"></a></li>
+              <li class="g-nav_text"><a href="#">BRAND</a></li>  
+              <li><a href="#"><img  style="width: 100px; height: 100px;" src="./img/q_movie.png"></a></li>
+              <li class="g-nav_text"><a href="#" onclick="link_movie_id()">MOVIE</a></li>  
+              <li><a href="#"><img  style="width: 100px; height: 100px;" src="./img/q_mail.png"></a></li>
+              <li class="g-nav_text"><a href="#" onclick="link_contact()">CONTACT</a></li>  
+              <li class="g-nav_text"><a onclick="VolumeControl()" class="music_btn">&nbsp;&nbsp;&nbsp;&nbsp;MUSIC&nbsp;ON/OFF</a></li>
+              </ul>
+              </div>
+              </nav>
+            
+            <figure class="contents">
+            
+            <div id="index" class="index">
+            <figure id="home_img" class="home_img">
+              
+              
+              <img 
+              style="width: 600px;height: 310px;object-fit: cover;" 
+              class="home_yu-ki" src="./img/YU-KI HP HOME 透過copy.png">
+              <div class="news">
+                <p ><span>NEWS&nbsp;</span>ooooooooo________________<br>
+              _______________________________<br>
+              _______________________________<br>
+              _______________________________<br>
+              _______________________________<br>
+              _______________________________
+            </p>
+            </div>
+              <li class="logo">
+                <a target="_blank" href="https://www.instagram.com/yu_ki.ganmi/"><img  src="./img/Instagram ロゴ_アートボード 1.png"></a>
+                <a target="_blank" href="https://twitter.com/YU_KIGANMI"><img src="./img/Twitter ロゴ_アートボード 1.png"></a>
+                <a target="_blank" href="https://www.instagram.com/yu_ki.ganmi/"><img src="./img/Tiktok ロゴ_アートボード 1.png"></a>
+                <a target="_blank" href="https://www.instagram.com/yu_ki.ganmi/"><img src="./img/Youtube ロゴ_アートボード 1.png"></a>
+              </li>
+            
+            </div>
+            
+            
+            
+            </figure>
+            
+            </figure>
+            </main>
 </body>
 </html>
