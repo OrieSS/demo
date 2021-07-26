@@ -13,6 +13,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="./style.css"> 
     <link rel="stylesheet" href="./index.css"> 
+    <link rel="stylesheet" href="./lesson.css"> 
     <script type="text/javascript" src="./sound.js" defer></script>  
     <script type="text/javascript" src="./index.js" defer></script> 
     <script src="./demo.js" defer></script>
@@ -57,12 +58,12 @@
         </div>
         
         <div id="moving_show">
-            <video id="moving" class="moving" src="HP spoud on off 映像.mp4" ></video>
+            <video id="moving" class="moving" src="HP spoud on off 映像.mp4" playsinline></video>
         </div>
     </div>
 
 
-    <main>
+<main>
 
         <div id="bt" class="openbtn1" style="display: none;"><span></span><span></span><span></span></div>
         <nav id="g-nav">
@@ -86,9 +87,9 @@
               </div>
               </nav>
             
-    <figure class="contents">
+<figure class="contents">
             
-        <div id="index" class="index">
+    <div id="index" class="index">
             <figure id="home_img" class="home_img">
               
               
@@ -111,9 +112,92 @@
                 <a target="_blank" href="https://www.instagram.com/yu_ki.ganmi/"><img src="./img/Youtube ロゴ_アートボード 1.png"></a>
               </li>
             </figure>
+    </div>
+      
+    <div id="profile" class="profile">
+        <img src="./img/YU-KI HP PROFILE_アートボード 1.png">
+      </div>
+      
+      <div id="lesson" class="lesson">
+        <div class="content_title">
+          <img  style="text-align: center; width: 100px; height: 100px;" src="./img/q_lesson.png"><br>
+          <h2>LESSON</h2>
         </div>
-            
-    </figure>
-    </main>
+         <div class="lesson_box">
+        <img class="lesson_item" style="width: 30%; height: auto;" src="./img/logo-dance.svg">
+        <iframe class="lesson_item, iframe" src="https://www.youtube.com/embed/s_dbuKwpy0Y" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        -write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <p class="lesson_title">NOA&nbsp;DANCE&nbsp;ACADEMY&nbsp;中目黒校<br>毎週月曜&nbsp;18:50-20:10</p> 
+        <div class="lesson_box">
+        <img class="lesson_item" style="width: 40%; height: auto;" src="./img/en_open.jpg">
+        <img class="lesson_item" style="width: 30%; height: auto;" src="./img/en.png">
+        </div>
+        <h2 class="lesson_title">EN&nbsp;DANCE&nbsp;STUDIO&nbsp;横浜校<br>毎週火曜&nbsp;18:00-19:30<br>2021.10.01&nbsp;START</h2>
+        <div class="lesson_box">
+        <img class="lesson_item" style="width: 30%; height: auto;" src="./img/SHAKE ロゴ.png">
+        <iframe class="lesson_item, iframe" src="https://www.youtube.com/embed/_4APnELd3Go" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 class="lesson_title">SHAKE&nbsp;DANCE&nbsp;STUDIO&nbsp;横浜校<br>毎週木曜&nbsp;19:00-20:15</h2>
+      <div class="lesson_box">
+        <iframe class="lesson_item, iframe" src="https://www.youtube.com/embed/WAVLZZ3WalI" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <img class="lesson_item" style="width: 30%; height: auto;" src="./img/logo-dance.svg">
+      </div>
+      <h2 class="lesson_title">NOA&nbsp;DANCE&nbsp;ACADEMY&nbsp;秋葉原校<br>毎週金曜&nbsp;18:30-20:00</h2>
+      <div class="lesson_box">
+        <img class="lesson_item" style="width: 30%; height: auto;" src="./img/en.png">
+        <iframe class="lesson_item, iframe" src="https://www.youtube.com/embed/Ac6mAocrbKs" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+        clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h2 class="lesson_title">EN&nbsp;DANCE&nbsp;STUDIO&nbsp;SHIBUYA&nbsp;SCRAMBLE校<br>毎週金曜&nbsp;21:15-22:30</h2>
+      </div>
+      
+      
+      <div id="contact" class="contact">
+        <form class="formrun" action="https://form.run/api/v1/r/urvorn3bpqfi3cy2rk9khtli" method="post">
+          <!-- ↓自由に要素を追加・編集することができます -->
+          <div>
+            <label>お名前</label>
+            <input name="お名前" type="text">
+          </div>
+        
+          <div>
+            <label>メールアドレス [必須]</label>
+            <input name="メールアドレス" type="text" data-formrun-type="email" data-formrun-required>
+            <div data-formrun-show-if-error="メールアドレス">メールアドレスを正しく入力してください</div>
+          </div>
+        
+          <div>
+            <label>お問い合わせ [必須]</label>
+            <textarea name="お問い合わせ" data-formrun-required></textarea>
+            <div data-formrun-show-if-error="お問い合わせ">お問い合わせ入力してください</div>
+          </div>
+        
+          <div>
+            <label>個人情報利用同意 [必須]</label>
+            <input type="checkbox" name="個人情報利用同意" data-formrun-required>
+            <div data-formrun-show-if-error="個人情報利用同意">同意してください</div>
+          </div>
+        
+          <!-- ボット投稿をブロックするためのタグ -->
+          <div class="_formrun_gotcha">
+            <style media="screen">._formrun_gotcha {position:absolute!important;height:1px;width:1px;overflow:hidden;}</style>
+            <label for="_formrun_gotcha">If you are a human, ignore this field</label>
+            <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
+          </div>
+        
+          <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+        </form>
+      
+      </div>
+
+</figure>
+</main>
 </body>
 </html>
