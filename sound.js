@@ -36,7 +36,8 @@ window.addEventListener('DOMContentLoaded', function() {
     //e.preventDefault();
     document.getElementById("loading").innerHTML = ""; 
     //audio
-    audioElem.loop=true;  
+    audioElem.loop=true;
+    audioElem.muted=false;  
     audioElem.play();
     document.getElementById("v").innerHTML = audioElem.volume;
     //video
@@ -57,6 +58,7 @@ window.addEventListener('DOMContentLoaded', function() {
     document.getElementById("loading").innerHTML = ""; 
     //audio
     audioElem.volume=0;
+    audioElem.muted=true;
     audioElem.loop=true; 
     audioElem.play();
     document.getElementById("v").innerHTML = audioElem.volume;

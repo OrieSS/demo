@@ -163,6 +163,7 @@
   text-align: center;
   height: 150px;
   width: 100%;
+  word-break: break-all;
 }
 .news p{
   text-decoration:underline;
