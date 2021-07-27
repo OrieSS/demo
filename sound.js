@@ -136,7 +136,19 @@ window.addEventListener('DOMContentLoaded', function() {
 // }, false);
 // }
 // }
+
+function soundON(){
+  fadein();
+  audioElem.muted=false;
+}
+function soundOFF(){
+  fadeout();
+  audioElem.muted=true;
+}
+
+
 //フェードインとフェードアウト関数-------
+
 function fadein(){
   var vl  =audioElem.volume;
    //現在のvolumeを表示
@@ -163,11 +175,13 @@ function fadeout()
 function VolumeControl(){
   v=parseInt(document.getElementById("v").innerHTML);
 //音の処理をする
-  if(v==0){
+  if(audioElem.muted){
     fadein();
-  }else if(v==1){
+    audioElem.muted=false;
+  }else {
     //うるさい！
     fadeout();
+    audioElem.muted=true;
   }    
 
 }

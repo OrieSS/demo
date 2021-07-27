@@ -18,6 +18,12 @@
     <script type="text/javascript" src="./sound.js" defer></script>  
     <script type="text/javascript" src="./index.js" defer></script> 
     <script src="./demo.js" defer></script>
+    <script type="text/javascript">
+      function rset(f){
+      f.submit();
+      f.reset();
+      }
+      </script>
 </head>
 <body>
     <div style="opacity: 0.5; position: absolute; top: 0; right:0;">
@@ -98,12 +104,8 @@
               style="width: 600px;height: 310px;object-fit: cover;" 
               class="home_yu-ki" src="./img/YU-KI HP HOME 透過copy.png">
               <div class="news">
-                <p ><span>NEWS&nbsp;</span>ooooooooo________________pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp<br>
-              _______________________________<br>
-              _______________________________<br>
-              _______________________________<br>
-              _______________________________<br>
-              _______________________________
+                <p ><span style="font-weight: bold;">NEWS&nbsp;</span>
+                ooooooooo________________pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
             </p>
             </div>
               <li class="logo">
@@ -162,7 +164,7 @@
       
       <div id="contact" class="contact">
         <iframe name="myform" style="text-align: center; width: 50%; height: auto;" src="https://oriess.github.io/form/"></iframe>
-        <form target="myform" class="formrun" action="https://form.run/api/v1/r/urvorn3bpqfi3cy2rk9khtli" method="post">
+        <form target="_blank" class="formrun" action="https://form.run/api/v1/r/urvorn3bpqfi3cy2rk9khtli" method="post">
             <!-- ↓自由に要素を追加・編集することができます -->
             <div>
               <label>お名前</label>
@@ -194,7 +196,7 @@
               <input type="text" name="_formrun_gotcha" id="_formrun_gotcha" tabindex="-1">
             </div>
           
-            <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中...">送信</button>
+            <button type="submit" data-formrun-error-text="未入力の項目があります" data-formrun-submitting-text="送信中..." onclick="rset(this.form)">送信</button>
           </form>
       </div>
 
